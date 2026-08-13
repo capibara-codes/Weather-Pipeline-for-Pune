@@ -1,0 +1,12 @@
+# Virtual Environment
+venv/
+env/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+
+# Environment variables & local DB
+.env
+*.db
+*.log
