@@ -3,7 +3,7 @@ This is project is build to engireed an end to end weather analytics ETL pipelin
 The core goal was to build a reliable data ingestion and transformation workflow that extracts live metrics like temperature, humidity, wind speed, and rain from the Open-Meteo REST API. 
 I designed the transformation layer using Pandas to handle schema enforcement, data type validation, and missing value handling before loading the records into a relational database and implemented an indexed time-series schema in SQLite to optimize analytical range queries.
 
-## ✨ Key Technical Features
+## Key Technical Features
 
 * **Zero-Key REST Ingestion:** Fetches live weather metrics (`temperature`, `relative_humidity`, `wind_speed`, `rain`) for Pune District (`18.5204° N, 73.8567° E`).
 * **Environment Isolation & Security:** Utilizes `python-dotenv` and `.env` files to keep local environment parameters separated from source control.
@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS weather_logs (
 CREATE INDEX IF NOT EXISTS idx_timestamp ON weather_logs(timestamp);
 
 ## Clone repository
-git clone [https://github.com/YOUR_GITHUB_USERNAME/pune-weather-pipeline.git](https://github.com/YOUR_GITHUB_USERNAME/pune-weather-pipeline.git)
+git clone [clone](https://github.com/capibara-codes/Weather-Pipeline-for-Pune.git)
 cd pune-weather-pipeline
 
 ## To install required tech and libraries
